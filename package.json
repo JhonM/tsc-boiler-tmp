@@ -23,6 +23,17 @@
   "bugs": {
     "url": "https://github.com/JhonM/tsc-boiler-tmp/issues"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "npm run lint"
+    ]
+  },
   "homepage": "https://github.com/JhonM/tsc-boiler-tmp#readme",
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -45,16 +56,5 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.2.3"
-  },
-  "husky": {
-  "hooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   }
-},
-"lint-staged": {
-  "src/**/*.{js,ts}": [
-    "npm run lint"
-  ]
-}
 }
