@@ -22,9 +22,6 @@
     "type": "git",
     "url": "git+https://github.com/JhonM/tsc-boiler-tmp.git"
   },
-  "browserlist": [
-    "last 2 version"
-  ],
   "author": "jhonm <jhonmajoor@gmail.com>",
   "license": "MIT",
   "bugs": {
